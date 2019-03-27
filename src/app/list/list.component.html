@@ -1,0 +1,10 @@
+<div >
+  <ul>
+    <li style="list-style-type:none" *ngFor="let item of data" [ngClass]="{'styleTagA': true,'Complete': item.isCompleted}">
+        <app-item [todo]="item" (onComplete)="onCompleted($event)" (onDelete)="onDeleted($event)">
+
+        </app-item>
+    </li>
+  </ul>
+  <p *ngIf="true"></p>
+</div>
